@@ -1,2 +1,0 @@
-include ':app'
-rootProject.name = "MOB3000v1"
