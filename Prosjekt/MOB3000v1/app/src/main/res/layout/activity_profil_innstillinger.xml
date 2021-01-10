@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Hoved layout, med alt innhold  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Actionbar øverst (toolbar) -->
+            <include
+                layout="@layout/toolbar_simpel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--            Profilbilde-->
+                <ImageView
+                    android:id="@+id/profilBilde"
+                    android:layout_width="153dp"
+                    android:layout_height="121dp"
+                    android:paddingTop="5dp"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/profil"/>
+
+                <!-- Knapp for å velge bilde -->
+                <ImageView
+                    android:id="@+id/kameraBildeKnapp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:paddingLeft="100dp"
+                    android:paddingTop="5dp"
+                    app:srcCompat="@mipmap/camera_icon_foreground"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:padding="15dp"
+                android:paddingBottom="0dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tekst_info"
+                    android:textSize="25sp"
+                    android:paddingBottom="25dp"/>
+
+                <!-- Spinnere for valg av institusjon og fag -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@drawable/edit_square">
+                    <Spinner
+                        android:id="@+id/spinnerInstitusjon"
+                        android:layout_weight="1"
+                        android:layout_width="185dp"
+                        android:layout_height="40dp"/>
+                    <Spinner
+                        android:id="@+id/spinnerFag"
+                        android:layout_weight="1"
+                        android:layout_width="180dp"
+                        android:layout_height="40dp"/>
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/hint_epost"
+                        android:inputType="textEmailAddress"
+                        android:id="@+id/epost"/>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/hint_gammeltpass"
+                            android:inputType="textPassword"
+                            android:id="@+id/passold"/>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+                            <com.google.android.material.textfield.TextInputEditText
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/hint_nyttpass"
+                                android:inputType="textPassword"
+                                android:id="@+id/passny"
+                                android:layout_marginBottom="40dp"/>
+                            <!-- Knapp for å lagre info. Starter funksjon i Profilinnstillinger activity -->
+                            <Button
+                                android:id="@+id/knapp_lagre"
+                                android:layout_width="match_parent"
+                                android:layout_height="100dp"
+                                android:layout_weight="1"
+                                android:background="@color/fargeKnapp"
+                                android:text="@string/knapp_lagre"/>
+                            <!-- android:onClick="lagreInfo" -->
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

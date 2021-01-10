@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        tools:context=".Registrer">
+
+        <ImageButton
+            android:id="@+id/btnTilbake"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            app:srcCompat="@drawable/ic_arrow_back"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/app_name"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/white"
+            android:textSize="35sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginBottom="85dp"
+            android:text="@string/registrer"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@android:color/white"
+            android:textSize="22sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+
+                android:text="Fakultet:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+
+                android:text="Linje:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/edit_square"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinnerInst"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp" />
+
+            <Spinner
+                android:id="@+id/spinnerFag"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/emailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="@string/hint_epost"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edit_square"
+            app:drawableLeftCompat="@drawable/ic_email"
+            android:drawablePadding="10dp" />
+<!--            android:drawableLeft="@drawable/email"-->
+
+        <EditText
+            android:id="@+id/registerBrukernavn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="@string/hint_brukernavn"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edit_square"
+            app:drawableLeftCompat="@drawable/ic_personperson"
+            android:drawablePadding="10dp" />
+<!--            android:drawableLeft="@drawable/user"-->
+
+        <EditText
+            android:id="@+id/registerPassord"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/passord"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edit_square"
+            app:drawableLeftCompat="@drawable/ic_password"
+            android:drawablePadding="10dp" />
+<!--            android:drawableLeft="@drawable/password"-->
+
+        <EditText
+            android:id="@+id/registerGjenta"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/gjenta_passord"
+            android:paddingLeft="10dp"
+            android:background="@drawable/edit_square"
+            app:drawableLeftCompat="@drawable/ic_password"
+            android:drawablePadding="10dp" />
+<!--            android:drawableLeft="@drawable/password"-->
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/login_button"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:text="@string/registrer"
+            android:onClick="registrer" />
+
+    </LinearLayout>
+</ScrollView>

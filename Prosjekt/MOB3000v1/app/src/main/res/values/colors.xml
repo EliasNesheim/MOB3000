@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#283655</color>
+    <color name="colorPrimaryDark">#1E1F26</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <!-- Elias: -->
+    <color name="white">#FFFFFF</color>
+    <color name="redBlack">#751500</color>
+    <color name="lightGreen">#B8FFCD</color>
+    <color name="lightBlue">#8FFEF0</color>
+    <color name="lightOrange">#FFC49B</color>
+    <color name="Orange">#6D2D00</color>
+    <color name="knappBlu">#005C7C</color>
+
+    <color name="windowProfilBackground">#283655</color>
+    <color name="colorProfilAccent">#FFFFFF</color>
+    <!-- Tekst farge -->
+    <color name="fargeTekst">#FFFFFF</color>
+    <color name="fargeKnapp">#4D648D</color>
+
+
+</resources>

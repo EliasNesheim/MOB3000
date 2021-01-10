@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Hoved layout hvor alt annet går inn  -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- Actionbar øverst (toolbar) -->
+            <include
+                layout="@layout/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--            Profilbilde-->
+                <ImageView
+                    android:id="@+id/profilBilde"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    app:srcCompat="@drawable/profil"
+                    android:layout_gravity="center_horizontal"
+                    android:paddingTop="5dp"/>
+
+                <!--        Bruker tekst-->
+                <TextView
+                    android:id="@+id/txtBruker"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/txtInstitusjon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/txtStudie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" />
+
+                <TextView
+                    android:id="@+id/txtEpost"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="5dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnInnlegg"
+                    android:layout_width="225dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/login_button"
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:onClick="innSide"/>
+
+                <Button
+                    android:id="@+id/btnKommentarer"
+                    android:layout_width="225dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/login_button"
+                    android:textSize="15sp"
+                    android:onClick="kommSide"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="30dp">
+
+                <Button
+                    android:id="@+id/btnProfIns"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:background="@color/fargeKnapp"
+                    android:text="@string/profil_ins"
+                    android:drawableRight="@drawable/arrow_forward"
+                    android:drawableEnd="@drawable/arrow_forward" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nvView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/white"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/drawer_view" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

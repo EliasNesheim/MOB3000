@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single"
+        android:id="@+id/navItemGroup">
+
+        <item
+            android:id="@+id/hjem"
+            android:icon="@drawable/person"
+            android:title="@string/hjem" />
+
+        <item
+            android:id="@+id/profilside"
+            android:icon="@drawable/person"
+            android:title="@string/profil"
+            android:visible="false"/>
+        <item
+            android:id="@+id/innleggFragment"
+            android:icon="@drawable/add_circle"
+            android:title="@string/innlegg"
+            android:visible="false"/>
+        <item
+            android:id="@+id/GPS"
+            android:icon="@drawable/ic_gps"
+            android:title="@string/gps_lydl_s" />
+
+    </group>
+    <group android:checkableBehavior="single"
+        android:id="@+id/navItemGroup2"
+        android:visible="false">
+        <item
+            android:id="@+id/logginn"
+            android:icon="@drawable/ic_power"
+            android:title="@string/logg_inn"
+            android:visible="true"/>
+
+        <item
+            android:id="@+id/loggut"
+            android:icon="@drawable/ic_power"
+            android:title="@string/logg_ut"
+            android:visible="false"/>
+
+    </group>
+<!--    <item-->
+<!--        android:id="@+id/profilside"-->
+<!--        android:title="@string/profil" />-->
+</menu>

@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">StudHub</string>
+    <string name="logg_inn">Logg inn</string>
+    <string name="drawer_open">Open navigation drawer</string>
+    <string name="drawer_close">Close navigation drawer</string>
+    <string name="brukernavn">Brukernavn</string>
+    <string name="registrer">Registrer</string>
+    <string name="loginBtn"><u>Logg Inn</u></string>
+    <string name="passord">Passord</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Hamburger meny -->
+    <string name="profil">Profil</string>
+    <string name="logg_ut">Logg Ut</string>
+
+    <!-- It fragment-->
+    <string name="ingen_innlegg">Ingen innlegg lagt ut.</string>
+
+    <!-- Profilside aktivitet -->
+    <string name="activity_profil">Profil</string>
+    <string name="error_melding">Error: Sjekk internett-tilkobling.</string>
+    <string name="ingen_innlegg_bruker">Du har ikke lagt ut noen innlegg.</string>
+    <string name="ingen_kommentarer_bruker">Du har ikke lagt til noen kommentarer.</string>
+    <string name="profil_ins">Innstillinger</string>
+
+    <!-- Profilinnstillinger aktivitet -->
+    <string name="activity_profilins">Profilinnstillinger</string>
+    <string name="tekst_info">Endre info</string>
+    <string name="hint_brukernavn">Brukernavn</string>
+    <string name="hint_epost">E-post</string>
+    <string name="hint_linje">Linje</string>
+    <string name="hint_institusjon">Institusjon</string>
+    <string name="hint_gammeltpass">Gammelt passord</string>
+    <string name="hint_nyttpass">Nytt passord</string>
+    <string name="knapp_lagre">Lagre info</string>
+
+    <!-- GPS -->
+    <string name="start_location_updates">Start Lokasjon</string>
+    <string name="stop_location_updates">Stop Lokasjon</string>
+    <string name="map_key" translatable="false">AIzaSyDN4B88LHqlhboCFwAYJa3YjcREy4YKxbM</string>
+
+    <!-- Registrer -->
+    <string name="gjenta_passord">Gjenta passord</string>
+    <string name="hjem">Hjem</string>
+    <string name="innlegg">Innlegg</string>
+    <string name="gps_lydl_s">GPS lydløs</string>
+
+
+</resources>
